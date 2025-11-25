@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <input type="checkbox" onclick="abc()" value="1">1<br>
+    <input type="checkbox" onclick="abc()" value="2">2<br>
+    <input type="checkbox" onclick="abc()" value="3">3<br>
+    <input type="checkbox" onclick="abc()" value="4">4<br>
+    <input type="checkbox" onclick="abc()" value="5">5
+    <p id="p"></p>
+    <script>
+        let all = document.getElementsByTagName('input');
+        function abc(){
+            let select="";
+            for(let i=0;i<all.length;i++){
+                if(all[i].checked == true)
+                select = select + all[i].value + ',';
+            }
+            document.getElementById("p").innerHTML = select;
+        }
+        
+
+    </script>
+</body>
+</html>
