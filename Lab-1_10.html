@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- GCD of Two Num -->
+     <script>
+        var a = prompt('Enter First Number:');
+        var b = prompt('Enter Second Number:');
+        var c,i,d;
+        if(a<b){
+            c=a;
+            d=b;
+        }else{
+            c=b;
+            d=a;
+        }
+        for(i=c;i>=2;i--){
+            if((c % i == 0) && (d % i == 0)){
+                alert('GCD is : '+i);
+                break;
+            }
+        }
+        if(i==1){
+            alert('GCD is : 1');
+        }
+     </script>
+</body>
+</html>

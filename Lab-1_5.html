@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- Palindrome -->
+     <script>
+        var a = prompt('Enter a Number');
+        var b = a;
+        var c=0;
+        var r;
+        while(a>0){
+            r = a % 10;
+            c = c*10 + r;
+            a = Math.floor(a/10);  
+        }
+        if(b == c) alert('Given '+b+' is Palindrome.');
+        else alert('Given '+b+' is not Palindrome.');
+     </script>
+</body>
+</html>

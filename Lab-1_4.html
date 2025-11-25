@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- Fibbonaci -->
+     <script>
+        var a = prompt('Enter length of Fibbonaci : ');
+        var i;
+        var x = 0;
+        var y = 1;
+        var ans;
+        if(a==1) console.log(x);
+        else if(a==2) console.log(y);
+        else{
+            console.log(x);
+            console.log(y);
+            for(i=2;i<a;i++){
+                ans = x+y;
+                console.log(ans);
+                x=y;
+                y=ans;
+            }
+        }
+     </script>
+</body>
+</html>

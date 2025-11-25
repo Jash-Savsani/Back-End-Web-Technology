@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- ArmStrong -->
+    <script>
+        var a = prompt('Enter a Number : ');
+        var b =  a.length;
+        var i=1;
+        var r;
+        var ans=0;
+        var c = a;
+        while(a>0){
+            r = a % 10;
+            ans = ans + (r ** b);
+            i=1;
+            a = Math.floor(a/10);  
+        }
+        if(ans == c) alert('Armstrong');
+        else alert('Not Armstrong');
+    </script>
+</body>
+</html>

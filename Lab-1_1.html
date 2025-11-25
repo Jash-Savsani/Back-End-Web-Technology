@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        var a = prompt('Enter a:');
+        var b = prompt('Enter b:');
+        var c = prompt('Enter + , - , * , / , %');
+        var ans;
+        if(c=='+'){
+            ans = a+b;
+        }else if(c=='-'){
+            ans = a-b;
+        }else if(c=='*'){
+            ans = a*b;
+        }else if(c=='/'){
+            ans = a/b;
+        }else if(c=='%'){
+            ans = a%b;
+        }
+        // var d = document.getElementsByClassName("div");
+        // d[0].innerText = ans;    
+        alert('Ans is : '+ans);
+    </script>
+    <div class="div"></div>
+</body>
+</html>
