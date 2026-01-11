@@ -1,0 +1,12 @@
+{
+  "name": "npm-lab-1",
+  "version": "1.0.0",
+  "description": "First Time Making Project/Package",
+  "main": "index.js",
+  "scripts": {
+    "test": "npm i"
+  },
+  "author": "Jash Savsani",
+  "license": "ISC",
+  "keywords": []
+}
